@@ -8,7 +8,7 @@ team_leucine = [
         "Slack_username": "Chioma",
        "Country": "Nigeria",
         "Hobby": "Writing",
-        "Affiliation": "none",
+        "Affiliation": "None",
         "Fav_gene_sequence": "ACGTTTTGTAAATGTTGTGCTGTTAACACTGCAAATAAACTTGGTAGCAAACACTTCCA"
     },
     {
@@ -49,7 +49,7 @@ team_leucine = [
         "Country": "Nigeria",
        "Hobby": "Gaming",
         "Affiliation": "None",
-       "Fav_gene_sequence": ""
+       "Fav_gene_sequence": "" #empty to denote that the individual does not have a favourite gene sequence
     },
      {
        "Name": "Sharon Addy",
@@ -64,9 +64,9 @@ team_leucine = [
 #Convert the list of dictionaries into a pandas DataFrame
 df_team_leucine = pd.DataFrame(team_leucine)
 
-#Print the DataFrame
-print("Team_Leucine Information\n")
+#Print the Table heading
+print("Team_Leucine Information\n") #\n is used to create a space between the table heading and the table itself
 
 #Import IPython.display to present team information in a well-structured table
 from IPython.display import display
-display(df_team_leucine)
+display(df_team_leucine) #code to print and display the table with the team members' information
