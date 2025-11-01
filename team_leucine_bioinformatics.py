@@ -10,9 +10,7 @@
 
 import pandas as pd
 
-# ---------------------------------------------------------
 #  Helper Functions
-# ---------------------------------------------------------
 
 def validate_dna(seq):
    # """Check if the sequence contains only valid DNA bases (A, T, C, G)."""
@@ -56,9 +54,7 @@ def translate_dna(seq):
         protein += codon_table.get(codon, 'X')  # 'X' for unknown codons
     return protein
 
-# ---------------------------------------------------------
-# 🧬 Team Data
-# ---------------------------------------------------------
+#  Team Data
 #Import the pandas library for data manipulation
 import pandas as pd
 
@@ -133,9 +129,7 @@ team_leucine = [
 #Convert the list of dictionaries into a pandas DataFrame
 df_team_leucine = pd.DataFrame(team_leucine)
 
-# ---------------------------------------------------------
-# 🔬 Add Scientific Analysis Columns
-# ---------------------------------------------------------
+# Add Scientific Analysis Columns
 
 # Validate DNA
 df_team_leucine['is_valid_DNA'] = df_team_leucine['Fav_gene_sequence'].apply(validate_dna)
