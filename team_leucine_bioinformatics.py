@@ -1,3 +1,4 @@
+"""
 #Script Name: team_leucine_bioinformatics.py
 #Author: Lavinia Dorothea F. Joseph
 #Purpose:
@@ -6,7 +7,7 @@
        # - Validating DNA sequences
        # - Computing GC content
         #- Translating DNA to protein
-
+"""
 
 import pandas as pd
 
@@ -14,9 +15,10 @@ import pandas as pd
 
 def validate_dna(seq):
    # """Check if the sequence contains only valid DNA bases (A, T, C, G)."""
-    valid_bases = set("ATCG")
-    seq = seq.upper()
-    if all(base in valid_bases for base in seq):
+    valid_bases = set("ATGC")
+    seq = seq.upper() #treats lowercase inputs like "atgc"
+   #returns TRUE only if Every character passes the test
+   if all(base in valid_bases for base in seq):
         return True
     else:
         return False
@@ -55,9 +57,6 @@ def translate_dna(seq):
     return protein
 
 #  Team Data
-#Import the pandas library for data manipulation
-import pandas as pd
-
 #Define a list of dictionaries to store team information
 team_leucine = [
     {
