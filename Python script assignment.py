@@ -58,6 +58,14 @@ team_leucine = [
        "Hobby": "Repairing damaged electronics",
         "Affiliation": "None",
        "Fav_gene_sequence": "UGGAAUGUAAAGAAGUAUGUAU"
+    },
+    {
+       "Name": "Jegede Joseph.O",
+        "Slack_username": "Joseph",
+        "Country": "Nigeria",
+       "Hobby": "Gaming",
+        "Affiliation": "Obafemi Awolowo University",
+       "Fav_gene_sequence": "" #empty to denote that the individual does not have a favourite gene sequence
     }
 ]
 
